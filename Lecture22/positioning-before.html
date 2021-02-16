@@ -15,24 +15,57 @@ h1 {
 
 div#container {
   background-color: #00FFFF;
+  position: relative;
+  top: 50px;
 }
 p {
   width: 50px;
   height: 50px;
   border: 1px solid black;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 #p1 {
   background-color: #A52A2A;
+  position: relative;
+  top: 65px;
+  left: 65px;
 }
 #p2 {
   background-color: #DEB887;
+  position: relative;
+  top: 65px;
+  left: 130px;
 }
 #p3 {
   background-color: #5F9EA0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 #p4 {
   background-color: #FF7F50;
+}
+
+.flag {
+  border: solid green;
+  width: 200px;
+  height: 130px;
+  position: relative;
+  margin-top: 150px;
+  margin-left: 20px;
+  background-color: green;
+}
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
 }
 
 </style>
@@ -46,6 +79,10 @@ p {
   <p id="p3"></p>
   <p id="p4"></p>
 </div>
+<div class="flag">
+  <div class="circle"></div>
+</div>
+
 
 </body>
 </html>
